@@ -1,0 +1,15 @@
+.analytics-date-picker {
+  position: absolute;
+  z-index: 99;
+  left: -495%;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .analytics-date-picker {
+    position: absolute;
+    z-index: 99;
+    left: 0%;
+    top: 100%;
+  }
+}
