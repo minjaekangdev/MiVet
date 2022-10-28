@@ -168,8 +168,11 @@ const Analytics = () => {
       ),
       netGAService.batchGetPageViews(queryDates.startDate, queryDates.endDate),
     ];
-
-    Promise.all(apiCalls).then(onAllCallsSuccess).catch(onAllCallsError);
+    
+    const fetchData = async () => {
+     await Promise.all(apiCalls).then(onAllCallsSuccess).catch(onAllCallsError);  
+    }
+    fetchData(); 
   }, [queryDates]);
 
   return (
