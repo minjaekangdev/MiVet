@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Sabio.Web.Api.Controllers
 {
-    [Route("api/analytics")]
+    [Route("api/ga")]
     [ApiController]
     public class GAApiController : BaseApiController
     {
