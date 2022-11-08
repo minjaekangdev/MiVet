@@ -10,7 +10,7 @@ class GoogleAnalyticsService {
   batchGet = (startDate, endDate) => {
     const config = {
       method: "GET",
-      url: `${this.host}/api/analytics/dates?startDate=${startDate}&endDate=${endDate}`,
+      url: `${this.host}/api/ga/dates?startDate=${startDate}&endDate=${endDate}`,
       headers: { "Content-Type": "application/json" },
       withCredentials: true,
     };
@@ -20,7 +20,7 @@ class GoogleAnalyticsService {
   get = (startDate, endDate, dimension) => {
     const config = {
       method: "GET",
-      url: `${this.host}/api/analytics/users?startDate=${startDate}&endDate=${endDate}&dimension=${dimension}`,
+      url: `${this.host}/api/ga/users?startDate=${startDate}&endDate=${endDate}&dimension=${dimension}`,
       headers: { "Content-Type": "application/json" },
       withCredentials: true,
     };
@@ -30,7 +30,7 @@ class GoogleAnalyticsService {
   batchGetPageViews = (startDate, endDate) => {
     const config = {
       method: "GET",
-      url: `${this.host}/api/analytics/pageviews?startDate=${startDate}&endDate=${endDate}`,
+      url: `${this.host}/api/ga/pageviews?startDate=${startDate}&endDate=${endDate}`,
       headers: { "Content-Type": "application/json" },
       withCredentials: true,
     };
