@@ -134,15 +134,6 @@ const Analytics = () => {
   };
 
   useEffect(() => {
-    if (new Date(queryDates.startDate) < new Date("2022-09-30")) {
-      setQueryDates((prevState) => {
-        const pd = { ...prevState };
-        pd.startDate = new Date("2022-10-01").toJSON().slice(0, 10);
-
-        return pd;
-      });
-    }
-
     if (isFetching) {
       toastr.clear();
       toastr.info("Please wait..");
