@@ -6,4 +6,4 @@ It provides vets to have an all-in-one hub to setup appointments, provide patien
 
 MiVet is an MVP and due to the propreitary nature of the code I can only provide code snippets of my code. 
 
-This repository contains SQL, .NET, and REACT code for the user login/register features as well as the Google Analytics service.
+This repository contains SQL, .NET, and REACT code for the user login/register features as well as the Google Analytics service
