@@ -1,6 +1,6 @@
 USE [MiVet]
 GO
-/****** Object:  Table [dbo].[Roles]    Script Date: 10/23/2022 10:33:20 AM ******/
+/****** Object:  Table [dbo].[Roles]    Script Date: 10/23/2022 10:33:20 AM *****/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
