@@ -96,7 +96,7 @@ namespace Sabio.Services
         public async Task<bool> LogInTest(string email, string password, int id, string[] roles = null)
         {
             bool isSuccessful = false;
-            var testRoles = new[] { "User", "Super", "Content Manager" };
+            var testRoles = new[] { "User", "Super", "Admin" };
 
             var allRoles = roles == null ? testRoles : testRoles.Concat(roles);
 
